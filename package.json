@@ -1,10 +1,10 @@
 {
   "name": "node-gtk",
-  "version": "1.0.0",
+  "version": "1.0.0-cf-post1",
   "description": "GNOME Gtk+ bindings for NodeJS",
   "main": "lib/index.js",
   "scripts": {
-    "install": "npx node-pre-gyp install --fallback-to-build",
+    "install": "npx node-pre-gyp configure && npx node-pre-gyp build",
     "test": "mocha tests/__run__.js",
     "build": "npx node-pre-gyp build",
     "build:full": "npx node-pre-gyp rebuild",
